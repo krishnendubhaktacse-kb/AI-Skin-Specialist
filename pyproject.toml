@@ -13,4 +13,5 @@ dependencies = [
     "soundfile>=0.14.0",
     "speechrecognition>=3.17.0",
     "streamlit>=1.59.2",
+    "streamlit-js-eval>=0.1.7",
 ]
