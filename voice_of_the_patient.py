@@ -1,13 +1,20 @@
-import sounddevice as sd
-import soundfile as sf
-import speech_recognition as sr
+try:
+    import sounddevice as sd
+    import soundfile as sf
+    SOUND_AVAILABLE = True
+except Exception:
+    SOUND_AVAILABLE = False
 
+import speech_recognition as sr
 
 def record_patient_voice(
     language,
     audio_file="patient_voice.wav",
     duration=5
 ):
+
+    if not SOUND_AVAILABLE:
+        return "Voice input is not available on this server."
 
     sample_rate = 44100
 
