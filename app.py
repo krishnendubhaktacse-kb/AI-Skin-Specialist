@@ -2,8 +2,6 @@ import streamlit as st
 import os
 import threading
 import time
-import streamlit.components.v1 as components
-from streamlit_js_eval import streamlit_js_eval
 from brain_of_the_doctor import analyze_skin, update_progress
 from voice_of_the_patient import record_patient_voice
 from voice_of_the_doctor import generate_doctor_voice
