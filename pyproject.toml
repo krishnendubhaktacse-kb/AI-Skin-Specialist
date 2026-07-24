@@ -1,0 +1,16 @@
+[project]
+name = "ai-skin-specialist"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.139.2",
+    "google-genai>=2.12.1",
+    "python-dotenv>=1.2.2",
+    "scipy>=1.18.0",
+    "sounddevice>=0.5.5",
+    "soundfile>=0.14.0",
+    "speechrecognition>=3.17.0",
+    "streamlit>=1.59.2",
+]
